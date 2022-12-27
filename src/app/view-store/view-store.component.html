@@ -1,0 +1,11 @@
+<h1>Listado de Artículos</h1>
+<div class="container container-articulos">
+  <div class="product-card" *ngFor="let art of articulos">
+    <div class="info">
+      <p class="codigo"># {{ art.codigo }}</p>
+      <h3 class="descripcion">Producto: {{ art.descripcion }}</h3>
+      <p class="precio">Precio {{ art.precio | currency : "$" }}</p>
+    </div>
+    <img [src]="art.imagen" alt="" />
+  </div>
+</div>

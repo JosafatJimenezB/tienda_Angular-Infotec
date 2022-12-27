@@ -1,0 +1,45 @@
+img{
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.container-articulos{
+  display: grid;
+  gap: 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.info{
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.codigo{
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.descripcion{
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.product-card{
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 20px #ccc;
+  object-fit: contain;
+}
