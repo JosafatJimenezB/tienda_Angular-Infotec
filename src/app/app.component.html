@@ -5,6 +5,7 @@
       <th scope="col">Codigo</th>
       <th scope="col">Descripcion</th>
       <th scope="col">Precio</th>
+      <th scope="col">Imagen</th>
       <th scope="col">Borrar</th>
       <th scope="col">Seleccionar</th>
     </tr>
@@ -12,6 +13,7 @@
       <td>{{ art.codigo }}</td>
       <td>{{ art.descripcion }}</td>
       <td>{{ art.precio }}</td>
+      <td style="max-width: 100px; overflow: hidden">{{ art.imagen }}</td>
       <td>
         <button (click)="borrar(art.codigo)" class="btn btn-outline-danger">
           Borrar
@@ -40,6 +42,10 @@
     <p>
       Precio:
       <input type="number" [(ngModel)]="art.precio" class="form-control" />
+    </p>
+    <p>
+      Imagen:
+      <input type="text" [(ngModel)]="art.imagen" class="form-control" />
     </p>
     <p>
       <button (click)="agregar()" class="btn btn-outline-success m-2">
