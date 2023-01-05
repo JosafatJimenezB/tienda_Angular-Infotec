@@ -16,4 +16,13 @@ export class TiendaServiceService {
   articulos(){
     return this.articulosList;
   }
+
+  borrar(codigo:number){
+    for(let i = 0; i < this.articulosList.length; i++){
+      if(this.articulosList[i].codigo == codigo){
+        this.articulosList.splice(i,1);
+        return;
+      }
+    }
+  }
 }

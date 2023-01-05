@@ -21,13 +21,7 @@ export class AdminComponent implements OnInit{
   }
 
   borrar(codigo:number){
-    return
-    for(let i = 0; i < this.articulos.length; i++){
-      if(this.articulos[i].codigo == codigo){
-        this.articulos.splice(i,1);
-        return;
-      }
-    }
+    return this.tiendaService.borrar(codigo);
   }
 
   agregar(){
